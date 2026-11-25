@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>Orbi – le monde, pays par pays</title>
+  <meta name="description" content="Fais tourner le globe et découvre l'actualité de chaque pays : géopolitique, bonnes nouvelles, foot, économie." />
+  <meta name="theme-color" content="#4cc3f1" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Orbi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-mode="all">
+  <div id="globe" aria-label="Globe terrestre interactif"></div>
+
+  <!-- Barre du haut -->
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" class="brand-logo" />
+      <div>
+        <div class="brand-name">Orbi</div>
+        <div class="brand-tag" id="updated">Chargement…</div>
+      </div>
+    </div>
+    <div class="search">
+      <input id="search" type="search" placeholder="Chercher un pays…" list="countryList" autocomplete="off" />
+      <datalist id="countryList"></datalist>
+    </div>
+  </header>
+
+  <!-- Filtres -->
+  <nav class="filters" id="filters" aria-label="Filtres">
+    <button data-mode="all" class="chip active"><span>🌍</span>Tout</button>
+    <button data-mode="good" class="chip"><span>🌈</span>Good news</button>
+    <button data-mode="geo" class="chip"><span>⚔️</span>Géopolitique</button>
+    <button data-mode="foot" class="chip"><span>⚽</span>Foot</button>
+    <button data-mode="eco" class="chip"><span>💼</span>Économie</button>
+  </nav>
+
+  <!-- Carte "À la une" (contenu selon le filtre) -->
+  <aside class="card highlights" id="highlights">
+    <div class="hl-head">
+      <h2 id="hlTitle">À la une</h2>
+      <button class="icon-btn hl-toggle" id="hlToggle" aria-label="Réduire">–</button>
+    </div>
+    <div class="hl-body" id="hlBody"></div>
+  </aside>
+  <button class="fab" id="hlFab" aria-label="Afficher la liste">📋 <span id="hlFabLabel">À la une</span></button>
+
+  <!-- Légende -->
+  <div class="legend card" id="legend"></div>
+
+  <!-- Panneau de détail -->
+  <section class="panel" id="panel" aria-hidden="true">
+    <div class="panel-grip"></div>
+    <button class="icon-btn panel-close" id="panelClose" aria-label="Fermer">✕</button>
+    <div class="panel-content" id="panelContent"></div>
+  </section>
+
+  <div class="loader" id="loader"><div class="loader-globe">🌍</div><p>Le monde arrive…</p></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/globe.gl@2"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

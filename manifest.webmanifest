@@ -1,0 +1,17 @@
+{
+  "name": "Orbi – le monde, pays par pays",
+  "short_name": "Orbi",
+  "description": "Fais tourner le globe et découvre l'actualité de chaque pays.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f3f9ff",
+  "theme_color": "#4cc3f1",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

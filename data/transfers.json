@@ -1,0 +1,20 @@
+{
+  "window": "Mercato d'été 2026",
+  "note": "Montants selon la presse sportive (bonus inclus ou non selon les sources). Exemple pour le MVP : à remplacer par les données du mercato d'hiver (janvier 2027).",
+  "sources": [
+    { "name": "Sud Radio – Top 10 des ventes de l'été 2026", "url": "https://www.sudradio.fr/sport-rugby/sport/le-top-10-des-plus-grosses-ventes-du-mercato-estival-2026" },
+    { "name": "Footeo – Transferts les plus chers, 02/09/2026", "url": "https://news.footeo.com/2026/09/02/quels-sont-les-transferts-les-plus-chers-de-ce-mercato-estival-10571" },
+    { "name": "Science o Sport – Plus gros transferts 2026", "url": "https://www.scienceosport.fr/les-plus-gros-transferts-de-lete-2026-en-football/" }
+  ],
+  "transfers": [
+    { "player": "Enzo Fernández", "pos": "Milieu", "fee": "145 M€", "highlight": "Égale le record de la Premier League", "from": { "club": "Chelsea", "iso": "GB", "lat": 51.48, "lng": -0.19 }, "to": { "club": "Manchester City", "iso": "GB", "lat": 53.48, "lng": -2.2 } },
+    { "player": "Morgan Rogers", "pos": "Milieu offensif", "fee": "137 M€", "from": { "club": "Aston Villa", "iso": "GB", "lat": 52.51, "lng": -1.88 }, "to": { "club": "Chelsea", "iso": "GB", "lat": 51.48, "lng": -0.19 } },
+    { "player": "Elliot Anderson", "pos": "Milieu", "fee": "135 M€", "from": { "club": "Nottingham Forest", "iso": "GB", "lat": 52.94, "lng": -1.13 }, "to": { "club": "Manchester City", "iso": "GB", "lat": 53.48, "lng": -2.2 } },
+    { "player": "Bradley Barcola", "pos": "Ailier", "fee": "145 M€ (bonus compris)", "from": { "club": "Paris Saint-Germain", "iso": "FR", "lat": 48.84, "lng": 2.25 }, "to": { "club": "Liverpool", "iso": "GB", "lat": 53.43, "lng": -2.96 }, "highlight": "Plus grosse vente de l'histoire de la Ligue 1" },
+    { "player": "Ayyoub Bouaddi", "pos": "Milieu", "fee": "100 M€ + bonus", "from": { "club": "Lille", "iso": "FR", "lat": 50.61, "lng": 3.13 }, "to": { "club": "Manchester City", "iso": "GB", "lat": 53.48, "lng": -2.2 } },
+    { "player": "Anthony Gordon", "pos": "Ailier", "fee": "80 M€", "from": { "club": "Newcastle", "iso": "GB", "lat": 54.98, "lng": -1.62 }, "to": { "club": "FC Barcelone", "iso": "ES", "lat": 41.38, "lng": 2.12 } },
+    { "player": "Jérémy Jacquet", "pos": "Défenseur", "fee": "63,6 M€", "from": { "club": "Stade Rennais", "iso": "FR", "lat": 48.11, "lng": -1.71 }, "to": { "club": "Liverpool", "iso": "GB", "lat": 53.43, "lng": -2.96 } },
+    { "player": "Marc Cucurella", "pos": "Défenseur", "fee": "55 M€", "from": { "club": "Chelsea", "iso": "GB", "lat": 51.48, "lng": -0.19 }, "to": { "club": "Real Madrid", "iso": "ES", "lat": 40.45, "lng": -3.69 } },
+    { "player": "Rasmus Højlund", "pos": "Attaquant", "fee": "50 M€ (option d'achat levée)", "from": { "club": "Manchester United", "iso": "GB", "lat": 53.46, "lng": -2.29 }, "to": { "club": "Naples", "iso": "IT", "lat": 40.83, "lng": 14.19 } }
+  ]
+}

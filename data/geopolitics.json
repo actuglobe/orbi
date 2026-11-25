@@ -1,0 +1,167 @@
+{
+  "updatedAt": "2026-11-25",
+  "note": "Fiches rédigées à la main à partir de sources de presse (liens dans chaque fiche). Les titres « En direct » sous chaque fiche sont mis à jour automatiquement chaque jour.",
+  "types": {
+    "war":          { "icon": "⚔️", "label": "Guerre ouverte" },
+    "maritime":     { "icon": "⛔", "label": "Passage maritime bloqué ou perturbé" },
+    "insurgency":   { "icon": "💥", "label": "Insurrection / groupes armés" },
+    "humanitarian": { "icon": "🆘", "label": "Crise humanitaire grave" },
+    "ceasefire":    { "icon": "🕊️", "label": "Trêve fragile" },
+    "intervention": { "icon": "🎯", "label": "Intervention militaire étrangère" },
+    "tension":      { "icon": "⚠️", "label": "Tension, risque d'escalade" }
+  },
+  "zones": [
+    {
+      "id": "ukraine", "name": "Guerre en Ukraine", "type": "war", "severity": 3,
+      "lat": 48.4, "lng": 37.6, "countries": ["UA", "RU"],
+      "since": "Février 2022",
+      "summary": "L'invasion russe se poursuit. Des pourparlers à trois (Ukraine, Russie, États-Unis) se sont tenus à Abou Dhabi les 10 et 11 novembre 2026, les premiers depuis février, sans avancée notable. Les frappes de drones et de missiles continuent des deux côtés.",
+      "arrows": [
+        { "from": [51.2, 39.3], "to": [48.6, 37.9], "label": "Offensive russe dans le Donbass" },
+        { "from": [52.0, 36.5], "to": [49.9, 36.3], "label": "Frappes russes vers Kharkiv" }
+      ],
+      "line": { "label": "Ligne de front (approximative)", "points": [[50.4, 37.9], [49.6, 37.9], [49.0, 38.1], [48.3, 37.7], [47.8, 36.9], [47.5, 35.9], [47.3, 35.0], [46.8, 33.6], [46.5, 32.4]] },
+      "query": "Ukraine Russie front",
+      "sources": [
+        { "name": "Al Jazeera, 17/11/2026", "url": "https://aljazeera.com/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates" },
+        { "name": "Al Jazeera, 13/11/2026", "url": "https://aljazeera.com/news/2026/11/13/russias-demands-come-from-different-reality-as-war-efforts-stagnates" }
+      ]
+    },
+    {
+      "id": "iran", "name": "Guerre Israël / États-Unis – Iran", "type": "war", "severity": 3,
+      "lat": 32.4, "lng": 53.7, "countries": ["IR", "IL"], "related": ["US"],
+      "since": "Fin février 2026",
+      "summary": "Depuis fin février 2026, Israël et les États-Unis mènent des frappes contre l'Iran. Téhéran a riposté par des missiles sur les bases américaines de la région et par la fermeture de fait du détroit d'Ormuz. À la mi-novembre, l'Iran menace de frapper des bases américaines en Europe si elles servent à l'attaquer.",
+      "arrows": [
+        { "from": [31.8, 35.0], "to": [35.7, 51.4], "label": "Frappes israéliennes et américaines sur l'Iran" },
+        { "from": [34.3, 47.1], "to": [25.3, 51.3], "label": "Missiles iraniens vers les bases américaines du Golfe" }
+      ],
+      "query": "Iran guerre frappes",
+      "sources": [
+        { "name": "franceinfo – Crise dans le détroit d'Ormuz", "url": "https://www.franceinfo.fr/monde/iran/crise-dans-le-detroit-d-ormuz/" },
+        { "name": "Radio-Canada – Conflits armés", "url": "https://ici.radio-canada.ca/theme/20/conflits-armes" }
+      ]
+    },
+    {
+      "id": "ormuz", "name": "Détroit d'Ormuz", "type": "maritime", "severity": 3,
+      "lat": 24.6, "lng": 58.9, "ring": [26.55, 56.4], "countries": ["IR"], "related": ["OM", "AE"],
+      "since": "Fin février 2026", "status": "Passage très perturbé",
+      "summary": "Environ 20 % du pétrole mondial passe par ce détroit. Il n'est ni vraiment fermé ni rouvert : le trafic est irrégulier et les attaques augmentent. L'OMI recensait au 17 novembre 138 incidents contre des navires depuis le début du conflit, avec 25 marins tués. Octobre a été un mois record (plus de 30 attaques), et des mines ont été signalées.",
+      "line": { "label": "Route pétrolière du Golfe : passage bloqué / dangereux", "blocked": true, "points": [[28.8, 50.0], [27.4, 51.8], [26.4, 53.8], [26.3, 55.4], [26.6, 56.3], [26.1, 56.9], [25.2, 57.6], [24.0, 59.2], [22.6, 60.6]] },
+      "query": "détroit d'Ormuz",
+      "sources": [
+        { "name": "France 24, 18/11/2026", "url": "https://www.france24.com/fr/vid%C3%A9o/20261118-%C3%A9tats-unis-iran-attaque-contre-un-navire-dans-le-d%C3%A9troit-d-ormuz" },
+        { "name": "Revue Conflits – Ormuz 2026", "url": "https://www.revueconflits.com/ormuz-2026-radiographie-dun-detroit-ni-ferme-ni-rouvert/" },
+        { "name": "armees.com, nov. 2026", "url": "https://armees.com/ormuz-methaniers-attaques-securite-maritime-novembre-2026/" }
+      ]
+    },
+    {
+      "id": "babelmandeb", "name": "Mer Rouge / Bab-el-Mandeb", "type": "maritime", "severity": 3,
+      "lat": 11.4, "lng": 46.2, "ring": [12.6, 43.35], "countries": ["YE"], "related": ["SA", "DJ", "ER"],
+      "since": "Juillet 2026", "status": "Contrôlé par les Houthis",
+      "summary": "Les hostilités entre les Houthis (Yémen) et l'Arabie saoudite ont repris en juillet 2026. Les Houthis ont annoncé un blocus des ports saoudiens en mer Rouge. En septembre, ils ont pris plusieurs îles stratégiques et contrôlent désormais les abords du détroit de Bab-el-Mandeb, passage clé entre l'Europe et l'Asie.",
+      "line": { "label": "Route Europe–Asie par la mer Rouge : détroit sous contrôle houthi", "blocked": true, "points": [[27.5, 34.0], [24.0, 36.2], [20.5, 38.4], [17.0, 40.4], [14.4, 42.0], [12.6, 43.35], [12.0, 45.0], [12.3, 47.5], [12.9, 50.5]] },
+      "arrows": [ { "from": [15.4, 44.2], "to": [21.5, 39.2], "label": "Attaques houthies vers les ports saoudiens" } ],
+      "query": "Houthis mer Rouge",
+      "sources": [
+        { "name": "Euronews, 11/09/2026", "url": "https://fr.euronews.com/2026/09/11/les-houthis-semparent-dune-ile-yemenite-et-du-detroit-de-bab-el-mandeb" },
+        { "name": "HRW, 15/09/2026", "url": "https://www.hrw.org/fr/news/2026/09/15/yemen-les-recentes-attaques-des-houthis-ont-probablement-constitue-des-crimes-de" }
+      ]
+    },
+    {
+      "id": "gaza", "name": "Gaza", "type": "ceasefire", "severity": 3,
+      "lat": 31.42, "lng": 34.38, "countries": ["PS"], "related": ["IL"],
+      "since": "Octobre 2023 (trêve depuis octobre 2025)",
+      "summary": "Un cessez-le-feu négocié par les États-Unis est en place, mais il reste très fragile. Le 17 novembre 2026, l'organe qui le supervise a remis au Conseil de sécurité de l'ONU un rapport alarmant sur un risque d'effondrement de la trêve. La situation humanitaire reste critique.",
+      "query": "Gaza trêve",
+      "sources": [
+        { "name": "Noovo – Conflit au Moyen-Orient", "url": "https://www.noovo.info/nouvelles/international/conflit-moyen-orient/article/le-conseil-de-la-paix-craint-un-effondrement-du-cessez-le-feu-a-gaza/" }
+      ]
+    },
+    {
+      "id": "liban", "name": "Israël – Liban", "type": "ceasefire", "severity": 2,
+      "lat": 33.3, "lng": 35.5, "countries": ["LB"], "related": ["IL"],
+      "since": "Trêve depuis avril 2026",
+      "summary": "Un cessez-le-feu entre Israël et le Hezbollah a été annoncé en avril 2026. Des discussions directes entre représentants civils israéliens et libanais, une première depuis plus de 40 ans, ont eu lieu à Naqoura. La trêve reste précaire.",
+      "query": "Liban Israël Hezbollah",
+      "sources": [ { "name": "RTÉ, 17/04/2026", "url": "https://rte.ie/news/middle-east/2026/0417/1568774-ceasefire-deal-explainer/" } ]
+    },
+    {
+      "id": "soudan", "name": "Guerre au Soudan", "type": "humanitarian", "severity": 3,
+      "lat": 13.2, "lng": 29.0, "countries": ["SD"],
+      "since": "Avril 2023",
+      "summary": "Guerre civile entre l'armée soudanaise et les paramilitaires des Forces de soutien rapide (FSR). El Fasher est tombée aux mains des FSR en octobre 2025 après 500 jours de siège, avec des massacres documentés par l'ONU. Les combats se sont déplacés vers le Kordofan. C'est l'une des pires crises humanitaires au monde.",
+      "arrows": [ { "from": [13.6, 25.3], "to": [12.9, 28.4], "label": "Le front se déplace du Darfour vers le Kordofan" } ],
+      "query": "Soudan FSR Kordofan",
+      "sources": [
+        { "name": "Sudan Tribune, 08/11/2026", "url": "https://sudantribune.com/?p=321005" },
+        { "name": "Amnesty International – El Fasher", "url": "https://www.amnesty.fr/conflits-armes-et-populations/actualites/soudan-temoignages-massacres-el-fasher" }
+      ]
+    },
+    {
+      "id": "rdc", "name": "Est de la RD Congo", "type": "war", "severity": 3,
+      "lat": -1.7, "lng": 28.9, "countries": ["CD"], "related": ["RW"],
+      "since": "Résurgence fin 2021",
+      "summary": "Les rebelles du M23, regroupés depuis octobre 2026 dans le « Front pour la refondation de la nation », contrôlent de vastes zones du Nord et du Sud-Kivu. Kinshasa, les États-Unis et des experts de l'ONU accusent le Rwanda de les soutenir. Malgré l'accord-cadre de Doha (novembre 2025), les combats continuent.",
+      "arrows": [ { "from": [-1.95, 30.06], "to": [-1.68, 29.22], "label": "Soutien présumé du Rwanda au M23 (selon l'ONU)" } ],
+      "query": "RDC M23 Kivu",
+      "sources": [
+        { "name": "Al Jazeera, 18/11/2026", "url": "https://www.aljazeera.com/amp/news/2026/11/18/dr-congos-rival-peace-efforts-fail-to-halt-violence-in-the-east" },
+        { "name": "Africanews, 03/11/2026", "url": "https://www.africanews.com/amp/2026/11/03/un-peacekeeping-head-meets-leaders-of-rebel-coalition-in-eastern-drc/" }
+      ]
+    },
+    {
+      "id": "sahel", "name": "Sahel central", "type": "insurgency", "severity": 3,
+      "lat": 14.6, "lng": 0.6, "countries": ["ML", "BF", "NE"],
+      "since": "2012",
+      "summary": "Des groupes jihadistes liés à Al-Qaïda et à l'État islamique sont actifs au Mali, au Burkina Faso et au Niger, tous trois dirigés par des juntes militaires. Les attaques contre les civils et les armées restent nombreuses en 2026.",
+      "query": "Sahel jihadistes Mali Burkina Niger",
+      "sources": [ { "name": "Wikipedia – 2026 au Niger", "url": "https://en.wikipedia.org/wiki/2026_in_Niger" } ]
+    },
+    {
+      "id": "birmanie", "name": "Guerre civile en Birmanie", "type": "war", "severity": 2,
+      "lat": 21.5, "lng": 96.0, "countries": ["MM"],
+      "since": "Coup d'État de février 2021",
+      "summary": "Depuis le coup d'État de 2021, la junte militaire affronte une coalition de groupes armés ethniques et de milices pro-démocratie. Le pays reste en guerre civile.",
+      "query": "Birmanie junte",
+      "sources": [ { "name": "ViragePrépa – panorama des conflits 2026", "url": "https://www.virageprepa.com/articles/conflit-d%C3%A9finition-typologie-et-panorama-des-conflits-actuels-en-2026" } ]
+    },
+    {
+      "id": "venezuela", "name": "Venezuela", "type": "intervention", "severity": 2,
+      "lat": 8.0, "lng": -66.0, "countries": ["VE"], "related": ["US", "CO"],
+      "since": "Janvier 2026",
+      "summary": "Le 3 janvier 2026, les États-Unis ont frappé Caracas et capturé Nicolás Maduro. Delcy Rodríguez assure la présidence par intérim. Le 18 novembre 2026, Washington et Caracas ont signé un accord de coopération militaire, au cœur de débats sur la souveraineté du pays et le contrôle de son pétrole.",
+      "arrows": [ { "from": [25.8, -80.2], "to": [10.5, -66.9], "label": "Intervention puis présence militaire américaine" } ],
+      "query": "Venezuela États-Unis",
+      "sources": [
+        { "name": "Al Jazeera, 19/11/2026", "url": "https://aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela" },
+        { "name": "CFR – Global Conflict Tracker", "url": "https://www.cfr.org/global-conflict-tracker/conflict/instability-venezuela" }
+      ]
+    },
+    {
+      "id": "colombie", "name": "Colombie (sud-ouest)", "type": "insurgency", "severity": 1,
+      "lat": 2.5, "lng": -76.6, "countries": ["CO"],
+      "since": "Recrudescence 2025-2026",
+      "summary": "Des dissidents des FARC et d'autres groupes armés restent actifs, notamment dans le Cauca, où un attentat à la bombe contre un bus a tué 20 personnes en 2026.",
+      "query": "Colombie Cauca attentat",
+      "sources": [ { "name": "Wikipedia – 2026 en Colombie", "url": "https://en.wikipedia.org/wiki/2026_in_Colombia" } ]
+    },
+    {
+      "id": "somalie", "name": "Somalie", "type": "insurgency", "severity": 2,
+      "lat": 3.0, "lng": 45.3, "countries": ["SO"],
+      "since": "2006",
+      "summary": "Le gouvernement fédéral affronte toujours l'insurrection jihadiste des shebab, qui contrôlent une partie des zones rurales du centre et du sud.",
+      "query": "Somalie shebab",
+      "sources": [ { "name": "ViragePrépa – panorama des conflits 2026", "url": "https://www.virageprepa.com/articles/conflit-d%C3%A9finition-typologie-et-panorama-des-conflits-actuels-en-2026" } ]
+    },
+    {
+      "id": "taiwan", "name": "Détroit de Taïwan", "type": "tension", "severity": 1,
+      "lat": 24.2, "lng": 119.6, "countries": ["TW"],
+      "since": "Tension durable",
+      "summary": "Pékin revendique Taïwan et y mène régulièrement des manœuvres militaires. Il n'y a pas de conflit ouvert, mais c'est l'un des points de tension les plus surveillés au monde, en raison notamment des semi-conducteurs taïwanais.",
+      "line": { "label": "Détroit de Taïwan (sous surveillance)", "points": [[25.6, 120.4], [24.2, 119.6], [22.8, 119.0]] },
+      "query": "Taïwan Chine manœuvres",
+      "sources": [ { "name": "ViragePrépa – panorama des conflits 2026", "url": "https://www.virageprepa.com/articles/conflit-d%C3%A9finition-typologie-et-panorama-des-conflits-actuels-en-2026" } ]
+    }
+  ]
+}

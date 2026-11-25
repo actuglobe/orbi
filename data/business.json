@@ -1,0 +1,62 @@
+{
+  "updatedAt": "2026-11-25",
+  "note": "Grands rachats et fusions de 2026 (sélection). Montants en dollars, dette comprise quand précisé. Les titres « En direct » sont mis à jour chaque jour.",
+  "deals": [
+    {
+      "id": "sanofi-insmed", "sector": "Santé", "amount": "≈37 Md€ (41 Md$)", "date": "24/11/2026", "status": "Annoncé",
+      "buyer": { "name": "Sanofi", "iso": "FR", "city": "Paris", "lat": 48.87, "lng": 2.33 },
+      "target": { "name": "Insmed", "iso": "US", "city": "Bridgewater (New Jersey)", "lat": 40.6, "lng": -74.65 },
+      "summary": "Le laboratoire français propose 41 milliards de dollars en numéraire pour la biotech américaine, sa plus grosse opération depuis vingt ans. Objectif : renforcer son portefeuille de traitements contre les maladies respiratoires.",
+      "query": "Sanofi Insmed",
+      "source": { "name": "Boursorama – Fusions et acquisitions, 24/11/2026", "url": "https://www.boursorama.com/bourse/actualites/offres-du-jour-fusions-et-acquisitions-d26e8e03239d0d566c9b07da32988302" }
+    },
+    {
+      "id": "crowdstrike-zscaler", "sector": "Cybersécurité", "amount": "43,9 Md$", "date": "23/11/2026", "status": "Annoncé",
+      "buyer": { "name": "CrowdStrike", "iso": "US", "city": "Austin", "lat": 30.27, "lng": -97.74 },
+      "target": { "name": "Zscaler", "iso": "US", "city": "San José", "lat": 37.34, "lng": -121.89 },
+      "summary": "Rachat entièrement payé en actions : la plus grosse acquisition de l'histoire de la cybersécurité. Il illustre la consolidation du secteur autour de plateformes « tout-en-un ».",
+      "query": "CrowdStrike Zscaler",
+      "source": { "name": "Boursorama, 23/11/2026", "url": "https://boursorama.com/bourse/actualites/de-symantec-a-zscaler-les-plus-grandes-acquisitions-dans-le-domaine-de-la-cybersecurite-5c95500306b6b3737f3066ba41a7a930" }
+    },
+    {
+      "id": "paramount-wbd", "sector": "Médias", "amount": "111 Md$", "date": "2026", "status": "Validé, sous conditions",
+      "buyer": { "name": "Paramount Skydance", "iso": "US", "city": "Los Angeles", "lat": 34.05, "lng": -118.24 },
+      "target": { "name": "Warner Bros. Discovery", "iso": "US", "city": "New York", "lat": 40.71, "lng": -74.0 },
+      "summary": "La plus grosse fusion de l'histoire des médias réunit studios de cinéma (Warner), chaînes (CNN, HBO) et plateformes de streaming. Les actionnaires l'ont validée en avril 2026. Plusieurs États américains l'ont contestée en justice, puis un accord avec eux a été validé par un juge fin septembre.",
+      "query": "Paramount Warner Bros",
+      "source": { "name": "Planète Grandes Écoles – Top rachats 2026", "url": "https://www.planetegrandesecoles.com/top-rachats-entreprises-2026" }
+    },
+    {
+      "id": "nextera-dominion", "sector": "Énergie", "amount": "≈67 Md$", "date": "Mai 2026", "status": "En cours d'approbation",
+      "buyer": { "name": "NextEra Energy", "iso": "US", "city": "Juno Beach (Floride)", "lat": 26.88, "lng": -80.05 },
+      "target": { "name": "Dominion Energy", "iso": "US", "city": "Richmond (Virginie)", "lat": 37.54, "lng": -77.44 },
+      "summary": "Rapprochement de deux géants de l'électricité américaine, porté par l'explosion des besoins en électricité des centres de données de l'IA. Début novembre 2026, les deux groupes ont accepté la plupart des conditions imposées par les régulateurs de Virginie.",
+      "query": "NextEra Dominion",
+      "source": { "name": "La Tribune, 18/05/2026", "url": "https://www.latribune.fr/" }
+    },
+    {
+      "id": "kone-tke", "sector": "Industrie", "amount": "29,4 Md€", "date": "Avril 2026", "status": "En attente des autorités",
+      "buyer": { "name": "Kone", "iso": "FI", "city": "Espoo", "lat": 60.2, "lng": 24.65 },
+      "target": { "name": "TK Elevator", "iso": "DE", "city": "Düsseldorf", "lat": 51.23, "lng": 6.78 },
+      "summary": "Le finlandais Kone veut racheter l'allemand TK Elevator pour créer le numéro un mondial des ascenseurs et escalators. Pour rassurer les autorités de la concurrence, Kone envisagerait de céder une partie des activités européennes (octobre 2026).",
+      "query": "Kone TK Elevator",
+      "source": { "name": "Planète Grandes Écoles – Top rachats 2026", "url": "https://www.planetegrandesecoles.com/top-rachats-entreprises-2026" }
+    },
+    {
+      "id": "pif-ea", "sector": "Jeu vidéo", "amount": "55 Md$", "date": "Août 2026", "status": "Finalisé",
+      "buyer": { "name": "Fonds souverain saoudien (PIF) & partenaires", "iso": "SA", "city": "Riyad", "lat": 24.71, "lng": 46.68 },
+      "target": { "name": "Electronic Arts", "iso": "US", "city": "Redwood City", "lat": 37.49, "lng": -122.23 },
+      "summary": "Le plus gros rachat à effet de levier (LBO) de l'histoire : l'éditeur de FIFA/EA Sports FC passe sous le contrôle d'un consortium mené par le fonds souverain d'Arabie saoudite. C'est un exemple de soft power par le sport et le divertissement.",
+      "query": "Electronic Arts PIF rachat",
+      "source": { "name": "Planète Grandes Écoles – Top rachats 2026", "url": "https://www.planetegrandesecoles.com/top-rachats-entreprises-2026" }
+    },
+    {
+      "id": "kimberly-kenvue", "sector": "Grande conso", "amount": "48,7 Md$", "date": "Annoncé nov. 2025", "status": "Rachat",
+      "buyer": { "name": "Kimberly-Clark", "iso": "US", "city": "Irving (Texas)", "lat": 32.81, "lng": -96.95 },
+      "target": { "name": "Kenvue", "iso": "US", "city": "Summit (New Jersey)", "lat": 40.72, "lng": -74.36 },
+      "summary": "Le fabricant des mouchoirs Kleenex rachète Kenvue (Tylenol, Neutrogena, Listerine), issu de Johnson & Johnson, pour créer un géant de l'hygiène et de la santé grand public.",
+      "query": "Kimberly-Clark Kenvue",
+      "source": { "name": "Planète Grandes Écoles – Top rachats 2026", "url": "https://www.planetegrandesecoles.com/top-rachats-entreprises-2026" }
+    }
+  ]
+}
