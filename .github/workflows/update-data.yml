@@ -1,0 +1,55 @@
+# Met à jour les actus chaque matin puis publie le site (gratuit avec GitHub Actions + GitHub Pages).
+# - Chaque matin (ou bouton « Run workflow ») : collecte des actus → enregistrement → publication
+# - À chaque modification d'un fichier sur GitHub : publication immédiate (sans nouvelle collecte)
+name: Mise à jour et publication du site
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # tous les jours à 5h UTC (6h ou 7h à Paris)
+  workflow_dispatch:       # bouton « Run workflow » pour lancer à la main
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        if: github.event_name != 'push'
+        with:
+          node-version: 22
+
+      - name: Collecte des actus, classements et zones
+        if: github.event_name != 'push'
+        run: node scripts/update-data.mjs
+
+      - name: Enregistrer les nouvelles données
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "orbi-bot"
+          git config user.email "orbi-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "Actus du $(date -u +'%Y-%m-%d')"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
